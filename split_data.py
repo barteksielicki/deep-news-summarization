@@ -13,8 +13,8 @@ def split_dataset(path):
     dataset = np.array(random.sample(dataset, len(dataset)))
 
     # Split dataset to 70% training, 20% evaluation and 10% testing.
-    train_size = int(dataset_len*0.7)
-    eval_size = int(dataset_len*0.2)
+    train_size = int(dataset_len*0.8)
+    eval_size = int(dataset_len*0.15)
     train, eval, test = dataset[0:train_size], dataset[train_size:train_size+eval_size], dataset[train_size+eval_size:]
     return train, eval, test
 
