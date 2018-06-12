@@ -45,7 +45,7 @@ def get_config(config_file='seq2seq.ini'):
 
 # We use a number of buckets and pad to the closest one for efficiency.
 # Change bucket sizes and numbers if you use your own dataset. 
-_buckets = [(30, 10), (30, 20), (40, 10), (40, 20), (50, 20)]  
+_buckets = [(20, 12), (28, 25), (40, 12), (40, 25), (50, 25)]
 
 def read_data(source_path, target_path, max_size=None):
   """Read data from source and target files and put into buckets.
